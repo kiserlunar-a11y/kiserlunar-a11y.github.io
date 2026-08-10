@@ -133,39 +133,22 @@ h1 {
   text-decoration: none;
 }
 
-.brand-orbit {
-  position: relative;
-  width: min(340px, 74vw);
-  aspect-ratio: 1;
+.brand-visual {
+  width: min(430px, 88vw);
   justify-self: end;
   display: grid;
   place-items: center;
+  border-radius: 44px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 32px 100px rgba(0,0,0,0.48), 0 0 80px rgba(43,213,204,0.11);
 }
 
-.brand-core {
-  width: 132px;
-  height: 132px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(255,255,255,0.18);
-  border-radius: 34px;
-  color: #fff;
-  background: linear-gradient(145deg, #124e6c, #082238 62%, #0a1828);
-  box-shadow: 0 30px 90px rgba(0,0,0,0.45), 0 0 70px rgba(43,213,204,0.15);
-  font-size: 3.7rem;
-  font-weight: 900;
-  letter-spacing: -0.14em;
-  transform: rotate(-4deg);
+.company-logo {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-.brand-core span { color: var(--accent); font-size: 2rem; align-self: end; margin: 0 0 27px 7px; }
-
-.orbit-ring { position: absolute; border: 1px solid var(--line); border-radius: 50%; }
-.orbit-ring-one { inset: 12%; }
-.orbit-ring-two { inset: 1%; border-color: rgba(124,223,255,0.12); }
-.orbit-dot { position: absolute; width: 14px; height: 14px; border-radius: 50%; box-shadow: 0 0 28px currentColor; }
-.orbit-dot-one { top: 14%; right: 22%; color: var(--accent); background: var(--accent); }
-.orbit-dot-two { bottom: 15%; left: 14%; color: var(--gold); background: var(--gold); }
 
 .apps-section { padding: 20px 0 110px; }
 
@@ -287,9 +270,7 @@ footer { border-top: 1px solid var(--line); background: rgba(3,10,18,0.28); }
 
 @media (max-width: 800px) {
   .hero { min-height: 0; grid-template-columns: 1fr; padding: 64px 0 92px; }
-  .brand-orbit { width: min(290px, 74vw); justify-self: center; order: -1; }
-  .brand-core { width: 112px; height: 112px; border-radius: 29px; font-size: 3rem; }
-  .brand-core span { margin-bottom: 23px; font-size: 1.7rem; }
+  .brand-visual { width: min(360px, 82vw); justify-self: center; order: -1; border-radius: 36px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 13px; }
   .app-grid { grid-template-columns: 1fr; }
   .app-card { min-height: 0; }
@@ -303,7 +284,7 @@ footer { border-top: 1px solid var(--line); background: rgba(3,10,18,0.28); }
   .nav-links { gap: 13px; }
   .hero { padding-top: 43px; }
   h1 { font-size: clamp(2.7rem, 16vw, 4.1rem); }
-  .brand-orbit { width: 230px; }
+  .brand-visual { width: min(300px, 86vw); border-radius: 28px; }
   .app-card { padding: 23px; border-radius: 23px; }
   .app-card-top { align-items: center; }
   .app-mark { width: 72px; height: 72px; border-radius: 18px; }
